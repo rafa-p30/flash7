@@ -1,0 +1,120 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff0000;
+    text-align: center;
+}
+
+div.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+h1 {
+    color: #ffe600;
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+p {
+    color: #000000;
+    font-size: 18px;
+}
+
+p.texto {
+    color: #000000;
+}
+
+footer {
+    background-color: #ff0000;
+    text-align: center;
+}
+
+p.flash {
+    color: #ffe600;
+}
+
+nav.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    background-color: #ff0000;
+}
+
+nav.menu li {
+    margin: 0%;
+    width: 100%;
+    text-align: center;
+    position: relative; /* necessário para submenu */
+}
+
+nav.menu a {
+    display: block;
+    padding: 15px 20px;
+    color: #ffe600;
+    text-decoration: none;
+}
+
+nav.menu a:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+/* Bordas da tabela */
+tr,
+th,
+td {
+    border: 1px solid red;
+}
+
+/* Submenu oculto inicialmente */
+nav.menu ul ul.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #cc0000;
+    z-index: 1000;
+    min-width: 200px;
+    padding: 0;
+}
+
+/* Mostrar submenu ao passar o mouse */
+nav.menu li:hover > ul.submenu {
+    display: block;
+}
+
+/* Estilizar os itens do submenu */
+nav.menu ul.submenu li {
+    width: 100%;
+    text-align: left;
+}
+
+/* Estilizar links do submenu */
+nav.menu ul.submenu a {
+    padding: 10px 15px;
+    background-color: #ff0000;
+    color: #ffe600;
+}
+
+nav.menu ul.submenu a:hover {
+    background-color: #ff0000;
+    color: white;
+}
+
+/* Imagens responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+}
